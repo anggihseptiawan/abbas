@@ -1,0 +1,123 @@
+---
+import Card from "../components/Card.astro"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Abbas Bengkel">
+  <header class="flex flex-col justify-center px-10 md:px-24 h-screen">
+    <section class="content">
+      <h1
+        class="font-bold text-5xl md:text-6xl text-white uppercase mb-8 md:w-4/6"
+      >
+        <i class="bg-red-600 px-2">Bengkel mobil abbas</i>
+      </h1>
+      <p class="md:w-1/2 text-white text-lg mb-8">
+        Halo, Abbas bengkel adalah sebuah bengkel yang berlokasi di pangkal
+        pinang, kami membuka jasa service, kursus dan rental mobil, silahkan
+        datang ke bengkel kami, kami buka dari jam 9 - 5 sore.
+      </p>
+      <a
+        href="tel:082260148272"
+        class="flex bg-red-600 text-white w-max px-5 py-3 font-bold rounded-sm"
+      >
+        <img src="/phone.svg" class="invert mr-2 w-[16px]" alt="call" />
+        <span>Booking</span>
+      </a>
+    </section>
+  </header>
+
+  <main class="flex flex-col items-center py-20">
+    <h3 class="text-2xl font-bold text-center mb-6">
+      <span>Jasa Kami</span>
+    </h3>
+    <div class="flex flex-col md:flex-row sm:w-3/4">
+      <Card
+        title="Service Mobil"
+        body="Full service mobil, service ringan, service besar, turun mesin dll."
+      />
+      <Card
+        title="Kursus Mobil"
+        body="Kursus intensif selama satu bulan, dijamin bisa mengendarai mobil dengan baik."
+      />
+      <Card
+        title="Rental Mobil"
+        body="Rental mobil dengan persyaratan yang mudah dan harga terjangkau."
+      />
+    </div>
+  </main>
+
+  <footer
+    class="flex flex-col md:flex-row space-between text-white bg-red-600 mt-20"
+  >
+    <section class="location mb-6">
+      <div class="flex mb-3">
+        <img src="/phone.svg" class="invert mr-4" alt="call" />
+        <p>082269323232</p>
+      </div>
+      <div class="flex">
+        <img src="/map-pin.svg" class="invert mr-4" alt="location" />
+        <p class="mb-0">
+          Jl. Raya Pasir Padi, Air Itam, Kec. Bukitintan, Kota Pangkal Pinang,
+          Kepulauan Bangka Belitung 33684
+        </p>
+      </div>
+    </section>
+    <section
+      class="referensi w-full flex flex-col sm:items-end justify-end pb-8"
+    >
+      <p class="mb-0">
+        Photo by <a
+          target="_blank"
+          href="https://unsplash.com/@loganmeis?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          class="text-black">Logan Meis</a
+        > on <a
+          href="https://unsplash.com/s/photos/car-shop?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+          target="_blank"
+          class="text-black">Unsplash</a
+        >
+      </p>
+      <p>
+        Icons by <a
+          href="https://feathericons.com/"
+          class="text-black"
+          target="_blank">Feather Icons</a
+        >
+      </p>
+    </section>
+  </footer>
+</Layout>
+
+<style>
+  header {
+    position: relative;
+    background-image: url("/logan-meis-7qLT-Msda1k-unsplash.jpg");
+    background-size: cover;
+    background-position-x: right;
+  }
+
+  .content {
+    z-index: 4;
+  }
+
+  .content h1 {
+    line-height: 80px;
+  }
+
+  .content::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    inset: 0;
+    background: black;
+    z-index: -1;
+    opacity: 0.5;
+  }
+
+  main,
+  footer {
+    margin: auto;
+    padding: 20px 1.5rem 10px 1.5rem;
+  }
+</style>

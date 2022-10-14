@@ -1,0 +1,70 @@
+---
+export interface Props {
+  title: string
+}
+
+const { title } = Astro.props
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META BASIC -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="author" content="Abbas Bengkel" />
+    <meta name="subject" content="bengkel mobil" />
+    <meta name="topic" content="bengkel mobil" />
+    <meta name="summary" content="bengkel mobil" />
+    <meta name="url" content="http://www.websiteaddrress.com" />
+    <meta
+      name="keywords"
+      content="Bengkel pangkal pinang, bengkel mobil pangkal pinang, bengkel terbaik pangkal pinang, abbas bengkel, bengkel mobil abbas, service dan kursus mobil pangkal pinang"
+    />
+    <meta
+      name="description"
+      content="Kami, Abbas bengkel adalah sebuah bengkel yang berada di pangkal pinang, kami membuka jasa service, kursus dan rental mobil, silahkan datang ke bengkel kami, kami buka dari jam 9 sampai 5 sore"
+    />
+
+    <!-- META OG TAG -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Bengkel mobil abbas" />
+    <meta
+      property="og:description"
+      content="Kami, Abbas bengkel adalah sebuah bengkel yang berada di pangkal pinang, kami membuka jasa service, kursus dan rental mobil, silahkan datang ke bengkel kami, kami buka dari jam 9 sampai 5 sore"
+    />
+    <meta
+      property="og:url"
+      content="https://www.metropolution.com/marketips/open-graph-atau-og-meta-tag/"
+    />
+    <meta
+      property="og:image"
+      content="https://www.metropolution.com/wp-content/uploads/2020/01/cara-membuat-open-graph-meta-tag.jpg"
+    />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      :root {
+        --accent: 124, 58, 237;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          #da62c4 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        background-color: #f6f6f6;
+      }
+      code {
+        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+      }
+    </style>
+  </body>
+</html>
