@@ -20,7 +20,13 @@ import Layout from "../layouts/Layout.astro"
         href="tel:082260148272"
         class="flex bg-red-600 text-white w-max px-5 py-3 font-bold rounded-sm"
       >
-        <img src="/phone.svg" class="invert mr-2 w-[16px]" alt="call" />
+        <img
+          src="/phone.svg"
+          class="invert mr-2"
+          width="16px"
+          height="16px"
+          alt="call bengkel abbas"
+        />
         <span>Booking</span>
       </a>
     </section>
@@ -30,32 +36,46 @@ import Layout from "../layouts/Layout.astro"
     <h3 class="text-2xl font-bold text-center mb-6">
       <span>Jasa Kami</span>
     </h3>
-    <div class="flex flex-col md:flex-row sm:w-3/4">
-      <Card
-        title="Service Mobil"
-        body="Full service mobil, service ringan, service besar, turun mesin dll."
-      />
-      <Card
-        title="Kursus Mobil"
-        body="Kursus intensif selama satu bulan, dijamin bisa mengendarai mobil dengan baik."
-      />
-      <Card
-        title="Rental Mobil"
-        body="Rental mobil dengan persyaratan yang mudah dan harga terjangkau."
-      />
+    <div class="flex justify-center">
+      <ul class="flex flex-col md:flex-row sm:w-3/4">
+        <Card
+          title="Service Mobil"
+          body="Full service mobil, service ringan, service besar, turun mesin dll."
+        />
+        <Card
+          title="Kursus Mobil"
+          body="Kursus intensif selama satu bulan, dijamin bisa mengendarai mobil dengan baik."
+        />
+        <Card
+          title="Rental Mobil"
+          body="Rental mobil dengan persyaratan yang mudah dan harga terjangkau."
+        />
+      </ul>
     </div>
   </main>
 
   <footer
     class="flex flex-col md:flex-row space-between text-white bg-red-600 mt-20"
   >
-    <section class="location mb-6">
+    <section class="mb-6">
       <div class="flex mb-3">
-        <img src="/phone.svg" class="invert mr-4" alt="call" />
+        <img
+          src="/phone.svg"
+          class="invert mr-4"
+          width="16px"
+          height="16px"
+          alt="nomor telepone bengkel abbas"
+        />
         <p>082269323232</p>
       </div>
       <div class="flex">
-        <img src="/map-pin.svg" class="invert mr-4" alt="location" />
+        <img
+          src="/map-pin.svg"
+          class="invert mr-4"
+          width="16px"
+          height="16px"
+          alt="lokasi bengkel abbas"
+        />
         <p class="mb-0">
           Jl. Raya Pasir Padi, Air Itam, Kec. Bukitintan, Kota Pangkal Pinang,
           Kepulauan Bangka Belitung 33684
